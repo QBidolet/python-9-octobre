@@ -22,9 +22,13 @@
 #
 
 # Lever exception
-try:
-    x = int(input("Saisissez un nombre positif."))
-    if x < 0:
-        raise ValueError("La valeur ne doit pas être négative.")
-except ValueError as e:
-    print(e)
+reponseValide = False
+while not reponseValide:
+    try:
+        x = int(input("Saisissez un nombre positif."))
+        if x < 0:
+            raise ValueError("La valeur ne doit pas être négative.")
+    except ValueError as e:
+        print(e)
+    else:
+        reponseValide = True
