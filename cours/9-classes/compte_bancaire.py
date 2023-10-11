@@ -34,13 +34,3 @@ class CompteBancaire:
     def __str__(self):
         return f"Titulaire du compte : {self.nom}\n" \
                f"Solde : {self.solde}"
-
-
-compte_bancaire = CompteBancaire("BIDOLET")
-print(compte_bancaire)
-
-compte_bancaire.deposer(150)
-print(f"Nouveau solde : {compte_bancaire.solde}")
-compte_bancaire.retirer(100)
-print(f"Nouveau solde : {compte_bancaire.solde}")
-print(compte_bancaire)
