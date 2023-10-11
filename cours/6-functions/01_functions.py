@@ -4,10 +4,8 @@ def do_nothing():
 
 do_nothing()
 
-
 def somme(a, b, c):
     return a + b + c
-
 
 # paramètres positionnels
 resultat = somme(44, 27, 3)
