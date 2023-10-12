@@ -1,0 +1,32 @@
+TP: Gestionnaire de Tâches en Ligne de Commande
+Objectif :
+Dans ce TP, vous allez mettre en œuvre vos connaissances en Python pour créer un gestionnaire de tâches simple
+à utiliser en ligne de commande. Vous utiliserez les fonctions, les structures de données et la gestion des fichiers.
+
+Étape 1: Création de la Structure des Tâches
+Créez une liste taches qui sera utilisée pour stocker vos tâches.
+Chaque tâche est représentée par un dictionnaire avec deux clés : titre (le titre de la tâche) et statut (soit "à faire", soit "terminée").
+
+Étape 2: Fonctions pour Gérer les Tâches
+1. Écrivez une fonction lister_taches() pour afficher toutes les tâches avec leur statut.
+2. Écrivez une fonction ajouter_tache(titre) pour ajouter une nouvelle tâche à la liste avec le statut "à faire".
+3. Écrivez une fonction supprimer_tache(titre) pour supprimer une tâche en utilisant son titre.
+4. Écrivez une fonction marquer_comme_fait(titre) pour marquer une tâche comme "terminée".
+
+Étape 3: Gestion des Exceptions
+Assurez-vous de gérer les erreurs potentielles dans vos fonctions, comme le fait de tenter de supprimer ou de marquer une tâche qui n'existe pas.
+
+Étape 4: Sauvegarde et Chargement
+1. Écrivez une fonction sauvegarder_taches(fichier="taches.txt") pour sauvegarder la liste des tâches dans un fichier.
+2. Écrivez une fonction charger_taches(fichier="taches.txt") pour charger la liste des tâches à partir d'un fichier.
+
+Étape 5: Interface en Ligne de Commande
+Créez une boucle principale qui attend les entrées de l'utilisateur.
+L'utilisateur doit pouvoir :
+1. Lister les tâches
+2. Ajouter une nouvelle tâche
+3. Supprimer une tâche existante
+4. Marquer une tâche comme terminée
+5. Sauvegarder la liste des tâches dans un fichier
+6. Charger la liste des tâches à partir d'un fichier
+7. Quitter le programme

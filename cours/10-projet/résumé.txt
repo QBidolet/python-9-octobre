@@ -14,3 +14,15 @@ Pour créer un projet Python :
     - créer vos packages (avec __init__.py)
 
     - créer vos modules
+
+Pour créer un .exe :
+    - Installer le package PyInstaller :
+            avec pip : pip install pyinstaller
+            sans pip : on télécharge le fichier sur pypi
+                        on installe avec : python setup.py install chemin/vers/le/fichier
+    - Créer le .exe
+        pyinstaller --onefile main.py
+
+Gestion des dépendances :
+- pip freeze > requirements.txt
+- pip install -r requirements.txt
