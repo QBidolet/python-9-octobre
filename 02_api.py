@@ -7,7 +7,7 @@ HEADERS = {"Content-type": "application/json"}
 url_get = URL_BASE + "/get/users/"
 url_post = URL_BASE + "/post/users/"
 
-response = requests.get(url_get, auth=AUTH, headers=HEADERS)
+response = requests.get(url_get, auth=AUTH, headers=HEADERS, verify=False)
 response = requests.post(url_post, auth=AUTH, headers=HEADERS)
 
 if response.status_code == 200:
